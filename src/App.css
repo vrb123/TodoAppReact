@@ -1,26 +1,67 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding:0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: wheat;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title_app{
+    font-size:2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.app_form{
+    display: flex;
+    justify-content: center;
+}
+
+.app_form > form > input {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: black;
+    padding: 0.4em;
+    color: wheat;
+    font-size: 1.2em;
+}
+
+
+
+.list_todos{
+
+}
+
+.todo_row{
+  color: whitesmoke;
+  font-size: 1.75em;
+  margin: 0.5em;
+}
+
+.todo_row > input {
+  display: inline-flex;
+}
+
+.todo_row > p{
+  display: inline;
+  padding: 0.5em;
+}
+
+.todo_stats > div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo_stats p{
+  color: whitesmoke;
+  font-size: 1.4em;
+  margin: 0.2em;
 }
 
 @keyframes App-logo-spin {
